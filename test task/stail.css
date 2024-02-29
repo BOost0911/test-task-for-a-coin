@@ -1,0 +1,53 @@
+.square {
+    width: 220px;
+    height: 200px;
+    background-color:black;
+    border-radius: 20px;
+    transition: width 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: rotateY(-20deg) rotateX(20deg);
+}
+
+.square:hover {
+    width: 250px;
+}
+
+.square::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: wheat;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.square:hover::before {
+    opacity: 1;
+}
+
+.square1::before {
+    content: "Надпись 1";
+}
+
+.square2::before {
+    content: "Надпись 2";
+}
+
+.square3::before {
+    content: "Надпись 3";
+}
+
+.square4::before {
+    content: "Надпись 4";
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
