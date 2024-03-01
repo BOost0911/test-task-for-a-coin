@@ -1,15 +1,15 @@
 .square {
-    width: 220px;
-    height: 200px;
-    background-color:black;
+    width: 210px;
+    height: 160px;
+    background-color:rgb(33, 36, 40);
     border-radius: 20px;
     transition: width 0.3s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 100px rgba(10, 11, 12, 0.5);
     transform: rotateY(-20deg) rotateX(20deg);
 }
 
 .square:hover {
-    width: 250px;
+    width: 350px;
 }
 
 .square::before {
@@ -51,3 +51,25 @@
     height: 100vh;
     
 }
+
+svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+    width: 120px;
+    height: 120px;
+  }
+  
+svg {
+    position: relative;
+  }
+  
+  svg {
+    transition: opacity 0.1s;
+  }
+  
+  svg:hover {
+    opacity: 0;
+  }
